@@ -24,7 +24,7 @@
     let stop = null;
     
     function sendMessageToChat (e) {
-        if (!e.keyCode || e.keyCode !== 13) {
+        if (e.keyCode && e.keyCode !== 13) {
             socket.emit('typing', $text.data('nickname'));
 
             if (stop !== null) {
