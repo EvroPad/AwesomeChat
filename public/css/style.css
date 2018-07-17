@@ -1,0 +1,123 @@
+.online {
+  position:absolute;
+  top: 17px;
+  left: 0px;
+  color: #22d822;
+  padding: 10px;
+  border-radius: 50px;
+}
+
+.ofline {
+  position:absolute;
+  top: 25px;
+  left: 0px;
+  color: #9c9c9c;
+  padding: 10px;
+  border-radius: 50px;
+}
+
+.user {
+  border: 1px solid #ccc;
+  padding: 10px;
+  position:relative;
+  margin-bottom: 15px;
+}
+
+.user-name {
+  font-size: 1.5em;
+  letter-spacing: 1px;
+}
+
+.user-nickname {
+  color: #949494;
+}
+
+.nickname {
+    color: #ad4bde;
+}
+
+.main-block {
+  position: relative;
+  min-height: 400px;
+}
+
+.main-block .well {
+  height: 400px;
+  overflow: auto;
+}
+
+.main-block .well form {
+  position: absolute;
+  bottom: 15px;
+} 
+
+#body-chat {
+    overflow: auto;
+    height: 300px;
+}
+
+.error {
+    border: 2px solid red;
+}
+
+.checkbox {
+  vertical-align: top;
+  margin: 0 3px 0 0;
+  width: 17px;
+  height: 17px;
+}
+
+.checkbox + label {
+  cursor: pointer;
+}
+
+.checkbox:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+
+.checkbox:not(checked) + label {
+  position: relative;
+  padding: 0 0 0 60px;
+}
+
+.checkbox:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 50px;
+  height: 26px;
+  border-radius: 13px;
+  background: #CDD1DA;
+  box-shadow: inset 0 2px 3px rgba(0,0,0,.2);
+}
+
+.checkbox:not(checked) + label:after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: 2px;
+  width: 22px;
+  height: 22px;
+  border-radius: 10px;
+  background: #FFF;
+  box-shadow: 0 2px 5px rgba(0,0,0,.3);
+  transition: all .2s;
+}
+
+.checkbox:checked + label:before {
+  background: #9FD468;
+}
+
+.checkbox:checked + label:after {
+  left: 26px;
+}
+
+.checkbox:focus + label:before {
+  box-shadow: 0 0 0 3px rgba(255,255,0,.5);
+}
+
+.checkbox-form {
+    margin-top: 7px;
+}

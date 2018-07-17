@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row text-center">
+        <h3>Welcome <span class="nickname">{{nickname}}</span></h3>
+    </div>
+    <div class="row main-block">
+        <div class="col-sm-3 text-center offset-sm-1 well users-block">
+        </div>
+        <div class="col-sm-8 text-left well">
+            <div id="body-chat"></div>
+            <div class="form-inline" >
+                <div class="form-group">
+                    <input id="message" class="form-control" name="message"  data-name={{name}} data-nickname={{nickname}} />
+                    <button type="button" class="btn btn-default" id="submitMsg">Send</button>
+                </div>
+            </div>
+            <div class="tiping"></div>
+        </div>
+    </div>
+</div>
+
+{{#if socketio}}
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/socket.js"></script>
+{{else}}
+    <script src="/js/ajax.js"></script>
+{{/if}}

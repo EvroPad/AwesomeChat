@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="col-sm-4 col-sm-offset-4 text-center">
+        <h1>Welcome</h1>
+        <form class="form well" method="POST" action="chat">
+            <div class="form-group">
+                <label for="nickname">How to call you?</label>
+                <input type="text" class="form-control" id="nickname" name="nickname" placeholder="Nickname" required/>
+            </div>
+            <div class="form-group">
+                <label for="name">Who are you realy is?</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Real name" required/>
+            </div>
+            <div class="row">
+                <div class="form-group col-sm-6 checkbox-form">
+                    <input type="checkbox" class="checkbox" id="checkbox" name="socket" checked/>
+                    <label for="checkbox">Socket IO</label>
+                </div>
+                <button type="submit" class="btn btn-default col-sm-5">Send</button>
+            </div>
+        </form>
+    </div>
+</div>
